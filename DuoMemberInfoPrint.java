@@ -7,7 +7,15 @@ public class DuoMemberInfoPrint {
 		String str1="홍길동",str2="상(중)";
 		boolean e=true;
 		double f=178.3;
-		
+		//a=회원번호
+		//b1=성별
+		//b2=결혼횟수
+		//b3=학점
+		//c1=주민번호 앞, c2=주민번호 뒷
+		//e=흡연여부
+		//f=키
+		//str1=이름
+		//str2=용모
 		
 		System.out.println("******************************");
 		System.out.println("회원번호 : "+a);
