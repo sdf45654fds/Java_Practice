@@ -64,8 +64,8 @@ public class StudentScorePrint {
 		// 평균구하기
 		//avg1 = String.format("%.1f", sum1 / 3);
 		//avg2 = String.format("%.1f", sum2 / 3);
-		avg1 = sum1 / 3;
-		avg2 = sum2 / 3;
+		avg1 = sum1 / 3.0;
+		avg2 = sum2 / 3.0;
 
 		// 평점
 		// 평점(A(90~100),B(80~89),C(70~79),D(60~69),F(0~59))
