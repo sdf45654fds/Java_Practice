@@ -65,9 +65,9 @@ int rank; //석차
 	//출력메쏘드
 	
 	public void Header(){
-		System.out.printf("-----------------------------------------------------\n");
+		System.out.printf("--------------------------------------------\n");
 		System.out.printf("%s %s %s %s %s  %s %s  %s %s\n","학번","이름","국어","영어","수학","총점","평점","학점","석차");
-		System.out.printf("-----------------------------------------------------\n");
+		System.out.printf("--------------------------------------------\n");
 	}
 	public void Print(){
 		System.out.printf("%2s %4s %2d %3d %3d %4d %3.1f %2c \n",no,name,kor,eng,math,tot,avg,grade);
