@@ -18,6 +18,7 @@ int math; //수학,tn
 int tot; //총점,chd
 double avg; //평점,vud
 char grade; //학점,gkr
+int rank; //석차
 
 // 멤버메쏘드 선언
 /*
@@ -33,15 +34,15 @@ char grade; //학점,gkr
 	/*
 	 * 총점계산메쏘드
 	 */
-	public void tot(int tot){
+	public void tot(){
 		this.tot = kor+eng+math;
 		return;
 	}
 	/*
 	 * 평균계산메쏘드
 	 */
-	public void avg(double avg){
-		this.avg = tot/3; 
+	public void avg(){
+		this.avg = tot/3;
 		return;
 	}
 	/*
@@ -68,12 +69,14 @@ char grade; //학점,gkr
 	 */
 	public void Header(){
 		System.out.printf("--------------------------------------------------------------\n");
-		System.out.printf("%s %s %s %s %s %s %s  %s\n","학번","이름","국어","영어","수학","총점","평점","학점");
+		System.out.printf("%s %s %s %s %s  %s %s  %s %s\n","학번","이름","국어","영어","수학","총점","평점","학점","석차");
 		System.out.printf("--------------------------------------------------------------\n");
 	}
 	public void Print(){
-		System.out.printf("%2s %6s %4d %4d %4d %4d %3.1f %3c \n",no,name,kor,eng,math,tot,avg,grade);
-	}
-		
-	}
+		System.out.printf("%2s %4s %2d %3d %3d %4d %3.1f %2c \n",no,name,kor,eng,math,tot,avg,grade);
+	
 
+	}
+	
+		
+}
