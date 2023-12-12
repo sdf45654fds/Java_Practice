@@ -20,10 +20,10 @@ double avg; //평점,vud
 char grade; //학점,gkr
 int rank; //석차
 
-// 멤버메쏘드 선언
-/*
- * 기본데이타(번호,이름,국어,영어,수학)멤버변수에대입하는메쏘드
- */
+ // 멤버메쏘드 선언
+
+ //기본데이타(번호,이름,국어,영어,수학)멤버변수에대입하는메쏘드
+ 
 	public void data(int no,String name,int kor, int eng, int math){
 		this.no = no;		
 		this.name = name;
@@ -31,24 +31,21 @@ int rank; //석차
 		this.eng = eng;
 		this.math = math;
 	} 
-	/*
-	 * 총점계산메쏘드
-	 */
+	
+	//총점계산메쏘드
 	public void tot(){
 		this.tot = kor+eng+math;
 		return;
 	}
-	/*
-	 * 평균계산메쏘드
-	 */
+	
+	//평균계산메쏘드
 	public void avg(){
 		this.avg = tot/3;
 		return;
 	}
-	/*
-	 * 평점계산메쏘드
-	 */
 	
+	//평점계산메쏘드
+	//평점(A(90~100),B(80~89),C(70~79),D(60~69),F(0~59))
 	public void grade(){
 		
 		if (avg >= 90 && avg <= 100) {
@@ -64,9 +61,9 @@ int rank; //석차
 		}
 		return;
 	}
-	/*
-	 * 출력메쏘드
-	 */
+	
+	//출력메쏘드
+	
 	public void Header(){
 		System.out.printf("--------------------------------------------------------------\n");
 		System.out.printf("%s %s %s %s %s  %s %s  %s %s\n","학번","이름","국어","영어","수학","총점","평점","학점","석차");
