@@ -1,32 +1,79 @@
+package com.itwill01.method;
+/*
+#### 성적처리를 위한 필요한 학생객체를 만들기 위한 클래스
+*/
 public class Student {
-	
-	int no1; 	  //학번
-	String name1; //이름
-	int kor1;	  //국어
-	int eng1;	  //영어
-	int mth1;    //수학
-	int tot1;    //총점
-	double avg1;   //평균
-	char grade1;		  //평점
-	
-	int no2; 	  //학번
-	String name2; //이름
-	int kor2;     //국어
-	int eng2;     //영어
-	int mth2;     //수학
-	int tot2;     //총점
-	double avg2;  //평균
-	char grade2;		  //평점
 
-	//객체 생성할때 1 ,2로 나눌 필요없음
 	/*
-	int no; 	  //학번
-	String name; //이름
-	int kor;	  //국어
-	int eng;	  //영어
-	int mth;    //수학
-	int tot;    //총점
-	double avg;   //평균
-	char grade;
-	*/
-}
+ * << 속성(멤버변수)   >> 번호 이름 국어 영어 수학 총점 평균 평점 석차
+ * << 기능(멤버메쏘드) >> 기본데이타입력,총점계산,평균계산,평점계산, 출력
+ */
+
+//멤버변수 선언
+int no; //학번,gkr
+String name; //이름,dl
+int kor; //국어,rnr
+int eng; //영어,dud
+int math; //수학,tn
+int tot; //총점,chd
+double avg; //평점,vud
+char grade; //학점,gkr
+
+// 멤버메쏘드 선언
+/*
+ * 기본데이타(번호,이름,국어,영어,수학)멤버변수에대입하는메쏘드
+ */
+	public void data(int no,String name,int kor, int eng, int math){
+		this.no = no;		
+		this.name = name;
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+	} 
+	/*
+	 * 총점계산메쏘드
+	 */
+	public void tot(int tot){
+		this.tot = kor+eng+math;
+		return;
+	}
+	/*
+	 * 평균계산메쏘드
+	 */
+	public void avg(double avg){
+		this.avg = tot/3; 
+		return;
+	}
+	/*
+	 * 평점계산메쏘드
+	 */
+	
+	public void grade(){
+		
+		if (avg >= 90 && avg <= 100) {
+			grade = 'A';
+		} else if (avg >= 80 && avg < 90) {
+			grade = 'B';
+		} else if (avg >= 70 && avg < 80) {
+			grade = 'C';
+		} else if (avg >= 60 && avg < 70) {
+			grade = 'D';
+		} else {
+			grade = 'F';
+		}
+		return;
+	}
+	/*
+	 * 출력메쏘드
+	 */
+	public void Header(){
+		System.out.printf("--------------------------------------------------------------\n");
+		System.out.printf("%s %s %s %s %s %s %s  %s\n","학번","이름","국어","영어","수학","총점","평점","학점");
+		System.out.printf("--------------------------------------------------------------\n");
+	}
+	public void Print(){
+		System.out.printf("%2s %6s %4d %4d %4d %4d %3.1f %3c \n",no,name,kor,eng,math,tot,avg,grade);
+	}
+		
+	}
+
