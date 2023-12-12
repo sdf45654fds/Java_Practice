@@ -33,9 +33,7 @@ public class StudentMemberMethodMain {
 		student2.grade();
 		student3.grade();
 		
-		
-		
-		
+		//헤더
 		student1.Header();
 		
 		/*
