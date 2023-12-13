@@ -5,7 +5,12 @@ content assist : crtl + space
 new : crtl + n
 public static void main(String[] args) : main > ctrl+space >enter
 한라인 복사 : ctrl + alt + up,down
-앞에 보라색= 예약어 / 그 뒤 빨간색 식별자
+코드정렬단축키 = shift + tab
+포멧 단축키 = ctrl + shift + f
+브레이크포인트 = crtl + shift + b
+디버깅 = f11
+다음라인 = f6
+줄 제거 = ctrl + d
 
 bit=비트(bit, binary digit)는 하나의 비트는 0이나 1의 값을 가질 수 있고, 각각은 참, 거짓 혹은 서로 배타적인 상태를 나타낸다.
 
@@ -16,14 +21,6 @@ bit=비트(bit, binary digit)는 하나의 비트는 0이나 1의 값을 가질 
 
 스레드 = 실행흐름
 디버그 = 오류나 비정상적인 연산을 찾고 수정
-
-
-코드정렬단축키 = shift + tab
-포멧 단축키 = ctrl + shift + f
-브레이크포인트 = crtl + shift + b
-디버깅 = f11
-다음라인 = f6
-줄 제거 = ctrl + d
 
 지역변수(local variable) = 클래스블록을 제외한 블록안에 선언된 변수
 지역변수의 범위 = scope (선언된 블록안에서만 사용가능)
