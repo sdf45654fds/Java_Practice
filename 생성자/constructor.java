@@ -1,6 +1,6 @@
 /*
 05.생성자[constructor]
-github 2-6생성자
+github javafundmental 00.doc 2-6생성자
 */
 
 /*
