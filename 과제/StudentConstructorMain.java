@@ -32,11 +32,16 @@ public class StudentConstructorMain {
 		student1.print();
 		student2.print();
 		student3.print();
+		System.out.println();
 		
 		//학생 student1 의 이름변경한후(이름변경메쏘드호출후) student1학생객체출력
-		student1.setname()
-		//학생 student1 의 총점데이타 반환받은후 메인블록에서출력
-		//학생 student1 의 학점데이타 반환받은후 메인블록에서출력
+		student1.setName("PARK");
+		student1.print();
 		
+		//학생 student1 의 총점데이타 반환받은후 메인블록에서출력
+		System.out.println("student1 총점: "+student1.getTot());
+		
+		//학생 student1 의 학점데이타 반환받은후 메인블록에서출력
+		System.out.println("student1 총점: "+student1.getGrade());
 	}
 }
