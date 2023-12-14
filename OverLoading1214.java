@@ -1,4 +1,4 @@
-public class Overloading { <- //2개의 클래스 하나로 간단히 보고싶을때 (굳이 안해도됨) 
+class OverLoading { <- //2개의 클래스 하나로 간단히 보고싶을때 (굳이 안해도됨) 
 public void method() {
 		System.out.println("public void method()");
 	}
@@ -16,7 +16,7 @@ public void method() {
 	}
 } //인자가 여러개 있을떄 타입의 조합이 일치해야함
 
-public class OverloadingMain {
+public class OverLoadingMain {
 
 	public static void main(String[] args) {
     OverLoading overLoading = new OverLoading();
