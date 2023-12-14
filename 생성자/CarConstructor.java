@@ -10,9 +10,9 @@ public class CarConstructorMain {
 		car1.print();
 		System.out.println("--------------car2--------------");
 		Car car2 = new Car("4567", 13);
-		car1.setOutTime(15);
-		car1.calculateFee();
-		car1.print();
+		car2.setOutTime(15);
+		car2.calculateFee();
+		car2.print();
 
 		System.out.println("******오늘주차장이용차량출력******");
 		Car cara = new Car("1234", 1, 2, 1000);
