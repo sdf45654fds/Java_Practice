@@ -1,3 +1,8 @@
+/*
+04.OOP[다형성-오버로딩] 오버로딩=과부화,다중정의
+p.263
+*/
+
 class OverLoading { <- //2개의 클래스 하나로 간단히 보고싶을때 (굳이 안해도됨) 
 public void method() {
 		System.out.println("public void method()");
