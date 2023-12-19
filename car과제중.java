@@ -50,6 +50,6 @@ public class CarArrayMain {
 			if(carArray[i]!=null) {
 				carArray[i].print();
 			}
-}
-}
+		}
+	}
 }
