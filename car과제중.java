@@ -11,7 +11,7 @@ public class CarArrayMain {
 				new Car("1120", 10),null,null,null,null,
 				null,new Car("2389", 9),null,null,null,
 				null,null,null,null,new Car("5555", 6)
-		}
+		};
 	
 	/*
 	null.메쏘드() --> NullPointerException
