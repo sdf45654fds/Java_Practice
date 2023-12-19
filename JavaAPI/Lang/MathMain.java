@@ -3,10 +3,11 @@ package lang;
 public class MathMain {
 	public static void main(String[] args) {
 		/*
-		 * math 클래스
-		 * -수학계산함수를 가지고있는 클래스
-		 * -모든메쏘드 static
-		 * -객체생성이 불가능(생성자 접근제한자 private)
+		 * Math 클래스
+		 *   - 수학계산함수를 가지고있는 클래스
+		 *   - 모든메쏘드 static
+		 *   - 객체생성이 불가능(생성자 접근제한자 private)
+		 *   - https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
 		 */
 		// Math math=new Math();
 		double r = Math.abs(-127.90);
