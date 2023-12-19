@@ -51,21 +51,6 @@ public class CarArrayMain {
 
 	}
 	
-	System.out.println("4.입차");
-	
-	/*
-	 * 1.차량객체생성
-	 * 2.빈자리찾아서대입
-	 */
-	for (int a = 0; a < carArray.length; a++) {
-		if (carArray[a] != null) {
-			if (carArray[a].getNo().equals("7789")) {
-				carArray[a].print();
-			}
-		}
-
-	}
-	
 	System.out.println("5.차량번호 7789번  차한대 정보출력");
 	for (int a = 0; a < carArray.length; a++) {
 		if (carArray[a] != null) {
@@ -107,3 +92,4 @@ public class CarArrayMain {
 		}
 	}
 }
+
