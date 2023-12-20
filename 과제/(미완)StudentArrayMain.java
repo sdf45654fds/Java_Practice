@@ -1,7 +1,6 @@
-package com.itwill04.array.student;
+package com.itwill04.array.car;
 
 public class StudentArrayMain {
-
 	public static void main(String[] args) {
 		/*
 		 * 0.학생배열객체초기화
@@ -18,34 +17,76 @@ public class StudentArrayMain {
 				new Student(9, "QIM", 73, 90, 80)
 		};
 		/*
-		 * 1. 전체학생총점,평균,평점계산
+		 * 1. 전체학생들 개인별 총점,평균,평점계산
 		 */
 		System.out.println("1. 전체학생총점,평균,평점계산");
+		for (int a = 0; a < students.length; a++) {
+			students[a].calculateTotal();
+			students[a].calculateAvg();
+			students[a].calculateGrade();
+		}
+		
 		/*
 		 * 2. 전체학생 총점으로 석차계산
 		 */
 		System.out.println("2. 전체학생 총점으로 석차계산");
+		for (int a = 0; a < students.length; a++) {
+			for(int b = 0; b < students.length; b++) {
+				if(students[a].getTot() < students[b].getTot()) {
+					students[a].setRank(students[a].getRank() + 1);
+				}
+			}
+		}
+		
 		/*
 		 * 3. 전체학생출력
 		 */
 		System.out.println("3. 전체학생출력 ");
+		for (int a = 0; a < students.length; a++) {
+			students[a].print();
+		}
+		System.out.println();
+		
 		/*
 		 * 4. 번호3번 학생한명 출력
 		 */
 		System.out.println("4.번호3번 학생한명 출력  ");
+		for (int a = 0; a < students.length; a++) {
+			if(students[a].getNo()==3) {
+				students[a].print();
+				break;
+			}
+		}
+		System.out.println();
+		
 		/*
 		 * 5. 학점A인 학생들 출력
 		 */
 		System.out.println("5. 학점A인 학생들 출력");
+		for (int a= 0; a < students.length; a++) {
+			if(students[a].getGrade()=='A') {
+				students[a].print();
+			}
+		}
+		System.out.println();
+		
 		/*
 		 * 6. 학생총점으로 오름차순정렬
 		 */
 		System.out.println("6. 학생총점으로 내림(오름)차순정렬");
-		/*
-		 * 7. 학생학점순으로 오름차순정렬
-		 */
-		System.out.println("6. 학생학점순으로 오름차순정렬");
+		for (int a = 0; a < students.length; a++) {
+			for (int b = 0; b < students.length - 1 - a; b++) {
+				if (students[b].getTot() < students[b + 1].getTot()) {
+					Student tempTot = students[b];
+					students[b] = students[b + 1];
+					students[b + 1] = tempTot;
+				}
+			}
+		}
 		
+		Student.headerPrint();
+		for (int a = 0; a < students.length; a++) {
+			students[a].print();
+		}
 	}
-
 }
