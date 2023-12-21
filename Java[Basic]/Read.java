@@ -2,17 +2,6 @@
 구글드라이브= https://drive.google.com/drive/folders/1bTqyPV9LQt8vly7V_bixG2kpu6THkB7w
 도움 https://wakestand.tistory.com/notice/410#google_vignette
 
-content assist : crtl + space
-new : crtl + n
-public static void main(String[] args) : main > ctrl+space >enter
-한라인 복사 : ctrl + alt + up,down
-코드정렬단축키 = shift + tab
-포멧 단축키 = ctrl + shift + f
-브레이크포인트 = crtl + shift + b
-디버깅 = f11
-다음라인 = f6
-줄 제거 = ctrl + d
-
 bit=비트(bit, binary digit)는 하나의 비트는 0이나 1의 값을 가질 수 있고, 각각은 참, 거짓 혹은 서로 배타적인 상태를 나타낸다.
 
 0b - 2진수
