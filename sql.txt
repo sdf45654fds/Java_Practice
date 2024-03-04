@@ -1,0 +1,78 @@
+[
+SELECT * FROM customers;
+SELECT DISTINCT city FROM customers;
+]
+select  선택
+from  어디에서 어디로 가져오다
+distinct 중복 제거
+
+[
+SELECT customerName AS cname, customerId AS cId 
+FROM customers 
+ORDER BY customerName ASC;
+]
+order by 시키다
+asc 오름차순 
+desc(descending) 내림차순
+as 별칭 (as 안쓰고 스페이스바로도 가능)
+
+-----산술연산------
+[
+SELECT 1 ? 1;
+]
+= + - / *  ?에 넣어서 연산가능
+[
+SELECT customerID + 100 FROM customers;
+] = 101 부터 나옴
+% 나머지 계산
+[
+SELECT productName as pname, price AS 기존가, price*0.2 AS 할인가, pricce*0.8 AS 최종가 
+FROM Products;
+]
+[
+SELECT city || address || country FROM Customers;
+]
+||(파이프) 합치기
+
+[
+SELECT ? AND, OR, NOT ? ;
+]
+True = 1
+False = 0
+and = 곱
+or = 합
+not = 반대
+
+[
+SELECT * FROM customers(내가 이앞에서 선택한 것 중) 
+WHERE customerID BETEWEEN 30 AND 50;(이앞에 조건을 달아서 출력해달라)
+] = customerID 에서 between 30에서 50을 출력해라
+
+-IN 연산자-
+[
+SELECT * FROM Customers WHERE customerid IN (10, 20, 30);
+] = id가 10 , 20, 30인 것만 출력
+
+-LIKE 연산자-
+[
+SELECT * FROM Customers WHERE customerid LIKE '1' ;
+] = ID중 1인거 출력
+[
+1뒤에 _(언더바) 쓰면 1뒤에 포함된거까지 출력 )예를 들어 11,12,13
+앞에 쓰면 1앞에 포함된거까지 출력 )11,21,31
+%1% 양쪽에 쓰면 1이 포함된 모든거 출력 
+
+[
+SELECT customerID, customerName
+FROM customers
+WHERE customerID IS NULL;
+]
+IS NULL 데이터가 비어 있는 것 전부 출력
+
+
+-----비트연산자-----
+
+
+
+
+
