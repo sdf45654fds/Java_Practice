@@ -1,8 +1,35 @@
+INSERT 삽입(create) / SELECT 조회(read) / UPDATE 수정(update) / DELETE 삭제(delete)
+
+INSERT
+  테이블에 레코드 추가
+  INSERT INTO 문과 함께 VALUES 절을 사용하여 해당 테이블에 새로운 레코드를 추가
+	- INSERT INTO 테이블이름(필드이름1, 필드이름2, 필드이름3, ...) VALUES (데이터값1, 데이터값2, 데이터값3, ...)
+	- INSERT INTO 테이블이름 VALUES (데이터값1, 데이터값2, 데이터값3, ...)
+
+SELECT
+  SELECT 문을 사용하여 테이블의 레코드 선택
+  FROM 절은 레코드를 선택할 테이블의 이름을 명시
+  특정 레코드(조건)를 설정할 경우 WHERE 절 사용
+	-SELECT * FROM 필드이름 또는 테이블이름;
+	-SELECT 필드이름 FROM 테이블이름 WHERE 조건;
+	-SELECT DISTINCT 필드이름 FROM 테이블이름;  =중복제거
+
+UPDATE
+  UPDATE 문을 사용하여 레코드 내용 수정
+  WHERE 절의 조건을 만족하는 레코드의 값만을 수정
+	-UPDATE 테이블이름 SET 필드이름1=데이터값1, 필드이름2=데이터값2, ... WHERE 필드이름=데이터값;
+
+DELETE
+  DELETE 문은 해당 테이브에서 WHERE 절의 조건을 만족하는 레코드만을 삭제
+  WHERE 절 생략 시, 해당 테이블의 모든 데이터 삭제
+	-DELETE FROM 테이블이름 WHERE 필드이름=데이터값
+
 [
 SELECT * FROM customers;
 SELECT DISTINCT city FROM customers;
 ]
 select  선택
+* 해당테이블 전체필드 선택
 from  어디에서 어디로 가져오다
 distinct 중복 제거
 
@@ -70,9 +97,12 @@ WHERE customerID IS NULL;
 IS NULL 데이터가 비어 있는 것 전부 출력
 
 
------비트연산자-----
+STEP : [답글기능관련] 한 REF 내에서 각 게시글 간의 화면출력순서를 정의하기 위해 부여하는 숫자
+DEPTH : [답글기능관련] 게시판 화면 상에서 댓글을 들여쓰기 위해 공란 하나당 1 만큼 부여하는 숫자
 
-
-
+[
+CREATE SEQUENCE SEQ_USER
+START WITH 1 INCREMENT BY 1; 
+] = 시퀀스로 USERNO자동 1씩 증가
 
 
